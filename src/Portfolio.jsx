@@ -16,6 +16,17 @@ import {
   SiRedux,
 } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
+import rahmatImage from "./assets/remove-bg.png";
+import travelImage from "./assets/travel.png";
+import mobileImage from "./assets/mobile.png";
+import movieImage from "./assets/movie.png";
+import binarImage from "./assets/certibinarr.png";
+import pythonImage from "./assets/pythonn.png";
+import databsImage from "./assets/databs.png";
+import certiBinar from "./assets/binarcerti.pdf";
+import certiPython from "./assets/pythoncerti.pdf";
+import certiBs from "./assets/Sertifikat_IAII.pdf";
+import cvRahmat from "./assets/CV rahmat arayyan.pdf";
 
 const technologies = [
   { name: "HTML", icon: <SiHtml5 className="text-orange-400 text-6xl mb-4" /> },
@@ -51,7 +62,7 @@ const Portfolio = () => {
         >
           <div className="flex-shrink-0 w-32 h-32 md:w-48 md:h-48 mb-4 md:mb-0 md:mr-6">
             <img
-              src="src/assets/remove-bg.png"
+              src={rahmatImage}
               className="w-full h-full rounded-full object-cover"
               alt="Profile"
             />
@@ -68,7 +79,7 @@ const Portfolio = () => {
           </div>
         </section>
 
-        <section id="tech" className="my-16 text-center">
+        <section id="tech" className="my-16 text-center mt-32">
           <h2 className="text-3xl font-bold mb-6">My Tech Stack</h2>
           <p className="text-lg md:text-xl mb-6">
             The technology I use to create a website user interface
@@ -90,13 +101,13 @@ const Portfolio = () => {
           </div>
         </section>
 
-        <section id="projects" className="my-16 mt-20">
+        <section id="projects" className="my-16 mt-32">
           <h2 className="text-3xl font-bold mb-6 text-center">Projects</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 shadow-lg rounded-lg border hover:scale-110 flex flex-col items-center">
               <h3 className="text-2xl font-semibold mb-4">TravelAja</h3>
               <img
-                src="src/assets/travel.png"
+                src={travelImage}
                 className="hover:scale-105 w-full"
                 alt="TravelAja"
               />
@@ -115,7 +126,7 @@ const Portfolio = () => {
             <div className="bg-white p-6 shadow-lg rounded-lg border hover:scale-110 flex flex-col items-center">
               <h3 className="text-2xl font-semibold mb-4">Prime Movies</h3>
               <img
-                src="/src/assets/movie.png"
+                src={movieImage}
                 className="hover:scale-105 w-full"
                 alt="Prime Movies"
               />
@@ -135,7 +146,7 @@ const Portfolio = () => {
                 Hero Mobile Legends
               </h3>
               <img
-                src="/src/assets/mobile.png"
+                src={mobileImage}
                 className="hover:scale-105 w-full"
                 alt="Hero Mobile Legends"
               />
@@ -155,12 +166,12 @@ const Portfolio = () => {
           </div>
         </section>
 
-        <section id="certificate" className="my-16 text-center mt-20">
+        <section id="certificate" className="my-16 text-center mt-32">
           <h2 className="text-3xl font-bold mb-6">Certificates</h2>
           <div className="flex flex-wrap justify-center gap-8">
             <div className="max-w-xs bg-white shadow-lg rounded-lg p-6">
               <img
-                src="src/assets/certibinarr.png"
+                src={binarImage}
                 alt="Certificate"
                 className="w-full h-auto rounded-md mb-4 hover:scale-105 transition-transform"
               />
@@ -170,7 +181,7 @@ const Portfolio = () => {
                 development.
               </p>
               <a
-                href="src/assets/binarcerti.pdf"
+                href={certiBinar}
                 download
                 className="inline-block bg-blue-500 text-white px-6 py-3 rounded-md text-lg hover:bg-blue-600 transition-colors"
               >
@@ -179,7 +190,7 @@ const Portfolio = () => {
             </div>
             <div className="max-w-xs bg-white shadow-lg rounded-lg p-6">
               <img
-                src="src/assets/pythonn.png"
+                src={pythonImage}
                 alt="Certificate"
                 className="w-full h-auto rounded-md mb-4 hover:scale-105 transition-transform"
               />
@@ -190,7 +201,7 @@ const Portfolio = () => {
                 OpenEDG Python Institute.
               </p>
               <a
-                href="src/assets/pythoncerti.pdf"
+                href={certiPython}
                 download
                 className="inline-block bg-blue-500 text-white px-6 py-3 rounded-md text-lg hover:bg-blue-600 transition-colors"
               >
@@ -199,7 +210,7 @@ const Portfolio = () => {
             </div>
             <div className="max-w-xs bg-white shadow-lg rounded-lg p-6">
               <img
-                src="src/assets/databs.png"
+                src={databsImage}
                 alt="Certificate"
                 className="w-full h-auto rounded-md mb-4 hover:scale-105 transition-transform"
               />
@@ -209,7 +220,7 @@ const Portfolio = () => {
                 INFORMATIKA INDONESIA
               </p>
               <a
-                href="src/assets/Sertifikat_IAII.pdf"
+                href={certiBs}
                 download
                 className="inline-block bg-blue-500 text-white px-6 py-3 rounded-md text-lg hover:bg-blue-600 transition-colors"
               >
@@ -221,14 +232,14 @@ const Portfolio = () => {
 
         <section
           id="cv"
-          className="my-16 mx-auto bg-white shadow-lg rounded-lg p-8 max-w-lg text-center"
+          className="my-16 mx-auto bg-white shadow-lg rounded-lg p-8 max-w-lg text-center mt-32"
         >
           <h2 className="text-3xl font-bold mb-6">Curriculum Vitae</h2>
           <p className="mb-6 text-lg md:text-xl leading-relaxed">
             Click the button below to download my CV in PDF format.
           </p>
           <a
-            href="src/assets/CV rahmat arayyan.pdf"
+            href={cvRahmat}
             download
             className="inline-block bg-blue-500 text-white px-6 py-3 rounded-md text-lg hover:bg-blue-600 transition-colors"
           >
@@ -236,7 +247,7 @@ const Portfolio = () => {
           </a>
         </section>
 
-        <section id="contact" className="my-16 text-center mt-20">
+        <section id="contact" className="my-16 text-center mt-32">
           <h2 className="text-3xl font-bold mb-6">Contact Me</h2>
           <p className="text-lg md:text-xl leading-relaxed mb-6">
             Feel free to reach out to me through any of the following platforms:
