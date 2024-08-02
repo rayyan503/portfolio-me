@@ -170,6 +170,9 @@ const Portfolio = () => {
           <h2 className="text-3xl font-bold mb-6">Certificates</h2>
           <div className="flex flex-wrap justify-center gap-8">
             <div className="max-w-xs bg-white shadow-lg rounded-lg p-6">
+              <h3 className="text-xl font-semibold mb-4">
+                Front End JavaScript at Binar Academy
+              </h3>
               <img
                 src={binarImage}
                 alt="Certificate"
@@ -189,6 +192,9 @@ const Portfolio = () => {
               </a>
             </div>
             <div className="max-w-xs bg-white shadow-lg rounded-lg p-6">
+              <h3 className="text-xl font-semibold mb-4">
+                PCAP: Programming Essentials in Python
+              </h3>
               <img
                 src={pythonImage}
                 alt="Certificate"
@@ -209,6 +215,7 @@ const Portfolio = () => {
               </a>
             </div>
             <div className="max-w-xs bg-white shadow-lg rounded-lg p-6">
+              <h3 className="text-xl font-semibold mb-4">Database Systems</h3>
               <img
                 src={databsImage}
                 alt="Certificate"
@@ -217,7 +224,7 @@ const Portfolio = () => {
               <p className="text-lg md:text-xl mb-4">
                 Awarded for outstanding participation in studies and exams
                 management system database, organized by the IKATAN AHLI
-                INFORMATIKA INDONESIA
+                INFORMATIKA INDONESIA.
               </p>
               <a
                 href={certiBs}
