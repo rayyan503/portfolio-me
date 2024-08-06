@@ -16,6 +16,8 @@ import {
   SiRedux,
 } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
+
+import bannerMe from "./assets/undraw_Personal_website_re_c8dv.png";
 import rahmatImage from "./assets/remove-bg.png";
 import travelImage from "./assets/travel.png";
 import mobileImage from "./assets/mobile.png";
@@ -56,15 +58,42 @@ const Portfolio = () => {
     <div className="min-h-screen bg-gray-100 text-gray-800">
       <Navbar scrollToSection={scrollToSection} />
       <main className="p-8 md:p-16 container mx-auto">
+        {/* Banner Section */}
+        <section className="flex flex-col-reverse md:flex-row items-center p-8 rounded-lg mb-16">
+          <div className="flex flex-col items-center md:items-start text-center md:text-left md:mr-8">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              Welcome to My Web
+            </h1>
+            <p className="text-lg md:text-xl mb-6">
+              Hi, I'm Rahmat Arayyan. A passionate web developer with a focus on
+              creating stunning user interfaces.
+            </p>
+            <button
+              onClick={() => scrollToSection("about")}
+              className="bg-blue-400 text-white px-6 py-3 rounded-md text-lg hover:bg-black transition-colors"
+            >
+              Start
+            </button>
+          </div>
+          <div className="mb-8 md:mb-0 md:ml-8">
+            <img
+              src={bannerMe}
+              alt="Profile"
+              className="w-full h-64 md:h-80 object-cover"
+            />
+          </div>
+        </section>
+
+        {/* About Me Section */}
         <section
           id="about"
-          className="my-16 flex flex-col md:flex-row items-center md:items-start"
+          className="my-16 flex flex-col md:flex-row items-center md:items-start mt-36"
         >
           <div className="flex-shrink-0 w-32 h-32 md:w-48 md:h-48 mb-4 md:mb-0 md:mr-6">
             <img
               src={rahmatImage}
               className="w-full h-full rounded-full object-cover"
-              alt="Profile"
+              alt="Rahmat Arayyan"
             />
           </div>
           <div className="text-center md:text-left md:ml-10">
@@ -76,10 +105,17 @@ const Portfolio = () => {
               developing web displays, namely using the React Framework and
               Tailwind CSS.
             </p>
+            <p className="text-lg md:text-xl leading-relaxed mt-2">
+              I have also learned the Python, Java and PHP programming languages
+              ​with the Laravel and CodeIgniter frameworks I also enjoy
+              activities outside the home such as sports, traveling and playing
+              games in my free time
+            </p>
           </div>
         </section>
 
-        <section id="tech" className="my-16 text-center mt-32">
+        {/* Tech Stack Section */}
+        <section id="tech" className="my-16 text-center mt-36">
           <h2 className="text-3xl font-bold mb-6">My Tech Stack</h2>
           <p className="text-lg md:text-xl mb-6">
             The technology I use to create a website user interface
@@ -101,7 +137,8 @@ const Portfolio = () => {
           </div>
         </section>
 
-        <section id="projects" className="my-16 mt-32">
+        {/* Projects Section */}
+        <section id="projects" className="my-16 mt-36">
           <h2 className="text-3xl font-bold mb-6 text-center">Projects</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 shadow-lg rounded-lg border hover:scale-110 flex flex-col items-center">
@@ -166,7 +203,8 @@ const Portfolio = () => {
           </div>
         </section>
 
-        <section id="certificate" className="my-16 text-center mt-32">
+        {/* Certificates Section */}
+        <section id="certificate" className="my-16 text-center mt-36">
           <h2 className="text-3xl font-bold mb-6">Certificates</h2>
           <div className="flex flex-wrap justify-center gap-8">
             <div className="max-w-xs bg-white shadow-lg rounded-lg p-6">
@@ -237,6 +275,7 @@ const Portfolio = () => {
           </div>
         </section>
 
+        {/* CV Section */}
         <section
           id="cv"
           className="my-16 mx-auto bg-white shadow-lg rounded-lg p-8 max-w-lg text-center mt-32"
@@ -254,7 +293,8 @@ const Portfolio = () => {
           </a>
         </section>
 
-        <section id="contact" className="my-16 text-center mt-32">
+        {/* Contact Section */}
+        <section id="contact" className="my-16 text-center mt-36">
           <h2 className="text-3xl font-bold mb-6">Contact Me</h2>
           <p className="text-lg md:text-xl leading-relaxed mb-6">
             Feel free to reach out to me through any of the following platforms:
