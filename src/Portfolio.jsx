@@ -65,8 +65,8 @@ const Portfolio = () => {
               Welcome to My Web
             </h1>
             <p className="text-lg md:text-xl mb-6">
-              Hi, I'm Rahmat Arayyan. A passionate web developer with a focus on
-              creating stunning user interfaces.
+              Passionate web developer with a focus on creating stunning user
+              interfaces.
             </p>
             <button
               onClick={() => scrollToSection("about")}
