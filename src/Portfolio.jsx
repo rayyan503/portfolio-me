@@ -22,13 +22,14 @@ import rahmatImage from "./assets/remove-bg.png";
 import travelImage from "./assets/travel.png";
 import mobileImage from "./assets/mobile.png";
 import movieImage from "./assets/movie.png";
+import sppImage from "./assets/SNAP Midtrans Siswa.png"
 import binarImage from "./assets/certibinarr.png";
 import pythonImage from "./assets/pythonn.png";
 import databsImage from "./assets/databs.png";
 import certiBinar from "./assets/binarcerti.pdf";
 import certiPython from "./assets/pythoncerti.pdf";
 import certiBs from "./assets/Sertifikat_IAII.pdf";
-import cvRahmat from "./assets/CV rahmat arayyan.pdf";
+import cvRahmat from "./assets/CV English RahmatArayyan.pdf";
 
 const technologies = [
   { name: "HTML", icon: <SiHtml5 className="text-orange-400 text-6xl mb-4" /> },
@@ -99,18 +100,10 @@ const Portfolio = () => {
           <div className="text-center md:text-left md:ml-10">
             <h2 className="text-3xl font-bold mb-6">About Me</h2>
             <p className="text-lg md:text-xl leading-relaxed">
-              Hello everyone, I'm Rahmat Arayyan. I am currently registered as a
-              student at Bina Sarana Informatika University, pursuing a
-              Bachelor's degree in Software Engineering. My interest lies in
-              developing web displays, namely using the React Framework and
-              Tailwind CSS.
+             Hello! I'm Rahmat Arayyan, a Bachelor of Software Engineering graduate from Bina Sarana Informatika University. I'm a Front-End Developer with 9 months of work experience, 
+             specializing in building responsive web interfaces using React.js and Tailwind CSS. In addition to focusing on JavaScript-based front-end, I also have a strong understanding of backend development using Python, Go-Lang, and PHP (Laravel & CodeIgniter). I'm ready to bring my technical expertise and practical experience to contribute to your next industry-scale project.
             </p>
-            <p className="text-lg md:text-xl leading-relaxed mt-2">
-              I have also learned the Python, Java and PHP programming languages
-              ​with the Laravel and CodeIgniter frameworks I also enjoy
-              activities outside the home such as sports, traveling and playing
-              games in my free time
-            </p>
+            
           </div>
         </section>
 
@@ -154,7 +147,7 @@ const Portfolio = () => {
                 find various ticket options at very competitive prices.
               </p>
               <a
-                href="https://travelaja.click/"
+                href="https://github.com/rayyan503/TravelAja-FrontEnd"
                 className="mt-5 text-blue-500 hover:underline text-center"
               >
                 View Project
@@ -200,6 +193,16 @@ const Portfolio = () => {
                 View Project
               </a>
             </div>
+            <div className="bg-white p-6 shadow-lg rounded-lg border hover:scale-110 flex flex-col items-center">
+  <h3 className="text-2xl font-semibold mb-4">Pembayaran SPP Online Siswa</h3>
+  <img src={sppImage} className="hover:scale-105 w-full" alt="PaySPP" />
+  <p className="text-lg md:text-xl leading-relaxed mt-5">
+    A practical solution for paying school fees online! A secure platform that makes it easy for parents to make quick transactions and monitor payment history in real time.
+  </p>
+  <a href="https://github.com/rayyan503/spp-pembayaran" className="mt-5 text-blue-500 hover:underline text-center">
+    View Project
+  </a>
+</div>
           </div>
         </section>
 
