@@ -100,8 +100,8 @@ const Portfolio = () => {
           <div className="text-center md:text-left md:ml-10">
             <h2 className="text-3xl font-bold mb-6">About Me</h2>
             <p className="text-lg md:text-xl leading-relaxed">
-             Hello! I'm Rahmat Arayyan, a Bachelor of Software Engineering graduate from Bina Sarana Informatika University. I'm a Front-End Developer with 9 months of work experience, 
-             specializing in building responsive web interfaces using React.js and Tailwind CSS. In addition to focusing on JavaScript-based front-end, I also have a strong understanding of backend development using Python, Go-Lang, and PHP (Laravel & CodeIgniter). I'm ready to bring my technical expertise and practical experience to contribute to your next industry-scale project.
+             Hello! I'm Rahmat Arayyan, a Bachelor of Software Engineering graduate from Bina Sarana Informatika University. I'm a Front-End Developer with work experience, specializing in building responsive web interfaces using React.js and Tailwind CSS. In addition to focusing on JavaScript-based front-end, I also have a strong understanding of backend development using Python, Go-Lang, and PHP (Laravel & CodeIgniter). 
+             Additionally, I am proficient in MS Word, Excel, Google Slides, and fast typing. I'm ready to bring my technical expertise and practical experience to contribute to your next industry-scale project.
             </p>
             
           </div>
