@@ -14,9 +14,12 @@ import {
   SiCss3,
   SiJavascript,
   SiRedux,
+  SiGo,
+  SiPhp,
+  SiLaravel,
+  SiCodeigniter
 } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
-
 import bannerMe from "./assets/undraw_Personal_website_re_c8dv.png";
 import rahmatImage from "./assets/remove-bg.png";
 import travelImage from "./assets/travel.png";
@@ -48,6 +51,22 @@ const technologies = [
     name: "Tailwind CSS",
     icon: <SiTailwindcss className="text-teal-500 text-6xl mb-4" />,
   },
+  {
+    name: "go-lang",
+    icon: <SiGo className="text-teal-500 text-6xl mb-4" />,
+  },
+  {
+    name: "PHP",
+    icon: <SiPhp className="text-blue-500 text-6xl mb-4" />,
+  },
+  {
+    name: "Laravel",
+    icon: <SiLaravel className="text-red-500 text-6xl mb-4" />,
+  },
+  {
+    name: "CodeIgniter",
+    icon: <SiCodeigniter className="text-orange-500 text-6xl mb-4" />,
+  }
 ];
 
 const Portfolio = () => {
@@ -111,7 +130,7 @@ const Portfolio = () => {
         <section id="tech" className="my-16 text-center mt-36">
           <h2 className="text-3xl font-bold mb-6">My Tech Stack</h2>
           <p className="text-lg md:text-xl mb-6">
-            The technology I use to create a website user interface
+             A collection of technologies I use to develop responsive, high-performance, and user-friendly web applications.
           </p>
           <div className="flex flex-wrap justify-center">
             {technologies.map((tech) => (
